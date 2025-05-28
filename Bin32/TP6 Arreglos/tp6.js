@@ -74,3 +74,8 @@ function act14() {
     colores.splice(2, 3)
     return colores
 }
+
+function act14V2(arreglo,posicion,cantidad) {
+    arreglo.splice(posicion,cantidad)
+    return arreglo
+}
