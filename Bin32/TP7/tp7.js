@@ -117,7 +117,7 @@ function valorTotalYPromedio() {
 }
 
 function incrementarPrecios(porcentaje) {
-    if (typeof porcentaje ==="string" || porcentaje<=0) {
+    if (typeof porcentaje === "string" || porcentaje <= 0) {
         return `Porcentaje invalido`
     }
     const confirmar = confirm(`¿Desea incrementar el precio en un ${porcentaje}%?`)
@@ -137,8 +137,8 @@ function reporteDeStockBajo_forEach() {
 }
 
 function reporteDeStockBajo_filter() {
-    const stockBajo = inventario.filter(prod => prod.stock<50)
-    if (stockBajo.length>0) {
+    const stockBajo = inventario.filter(prod => prod.stock < 50)
+    if (stockBajo.length > 0) {
         return stockBajo
     }
     return `No se encontraron productos con stock bajo`
@@ -146,5 +146,9 @@ function reporteDeStockBajo_filter() {
 
 function filtrarPorStock(stock) {
     const filtro = inventario.filter(prod => prod.stock <= stock)
-    filtro.forEach(prod => console.log(`El producto ${prod.nombre} tienen ${prod.stock} unidades de stock`))
+    if (filtro.length > 0) {
+        filtro.forEach(prod => console.log(`El producto ${prod.nombre} tienen ${prod.stock} unidades de stock`))
+        return
+    }
+    return `No se encontraron productos con stock menor o igual a ${stock}`
 }
