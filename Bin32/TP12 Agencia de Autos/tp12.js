@@ -65,7 +65,7 @@ class Agencia {
     }
     antiguedadPromedio() {
         let prom = 0
-        this.vehiculos.forEach(au => prom+=au.calcularAntiguedad().ant)
+        this.vehiculos.forEach(au => prom+=au.calcularAntiguedad())
         prom=prom/this.vehiculos.length
         return `La antiguedad promedio es de ${prom.toFixed(2)} años`
     }

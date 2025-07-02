@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Encabezado</header>
+    <nav>Navegacion</nav>
+    <main>
+        <section>Seccion tematica</section>
+        <article>Contenido independiente</article>
+        <h3>Lista Ordenada:</h3>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+        <h3>Lista Desordenada:</h3>
+        <ul>
+            <li>Notebook</li>
+            <li>Monitor</li>
+            <li>Teclado</li>
+        </ul>
+        <h3>Tablas</h3>
+        <hr>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mouse</td>
+                    <td>$2.500</td>
+                    <td>Si</td>
+                </tr>
+                <tr>
+                    <td>Parlantes</td>
+                    <td>$7.200</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Webcam</td>
+                    <td>$5.000</td>
+                    <td>Si</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><strong>Total</strong></td>
+                    <td><strong>$14.700</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <h3>Atributos HTML Comunes</h3>
+        <ol>
+            <li>Enlaces</li>
+            <ul>
+                <li>href: Destino del enlace</li>
+                <li>target="_blank": Abre en nueva pestaña</li>
+                <li>download: Descarga el archivo en lugar de abrirlo</li>
+                <li>Ej: <a href="https://th.bing.com/th/id/R.0952ce831a0ad2cd173dd6e489f25fec?rik=MLYnWGay%2bIHgXA&riu=http%3a%2f%2fst1.photogallery.ind.sh%2fwp-content%2fuploads%2findiacom%2f-201604-1459855347.jpg&ehk=UVqgr6qqMNusKPO%2bmCeW0V7nU9j0xTB%2f1jvZfMjNsJ0%3d&risl=&pid=ImgRaw&r=0" target="_blank">Messi</a></li>
+            </ul>
+            <li>Imagenes</li>
+            <ul>
+                <li>src: Ruta de la imagen</li>
+                <li>alt: Texto alternativo si no carga</li>
+                <li>width, height: Dimensiones</li>
+                <li>Ej: <img src="https://wallpapers.com/images/featured/imagenes-de-imagen-79gc4p3mqu7an848.jpg" alt="Tortuguita" width="150"></li>
+            </ul>
+            <li>Inputs</li>
+            <ul>
+                <li>type: Tipo de entrada (Text, email, etc.)</li>
+                <li>placeholder: Texto guia</li>
+                <li>required: Campo obligatorio</li>
+                <li>maxlength: Cantidad maxima de caracteres</li>
+                <li>Ej: <input type="text" placeholder="Ingresa tu nombre" required></li>
+            </ul>
+            <li>Botones</li>
+            <ul>
+                <li>type: Tipo de boton (submit, reset...)</li>
+                <li>disabled: Desactiva el boton</li>
+                <li>Ej: <button type="submit" disabled>Enviar</button></li>
+            </ul>
+            <li>Atributos globales</li>
+            <ul>
+                <li>id: Identificador unico</li>
+                <li>class: Para estilos CSS</li>
+                <li>style: Estilos en linea</li>
+                <li>title: Texto emergente al pasar el cursor</li>
+                <li>hidden: Oculta el elemento</li>
+                <li>Ej: <p id="mensaje" class="aviso" style="color: red;" title="Mensaje importante">¡Atencion!</p></li>
+            </ul>
+        </ol>
+        <h3>CSS: Clases e ID</h3>
+        <div class="class-demo">Este div usa la clase .class-demo</div>
+        <div id="ejemplo-id">Este div se usa el ID #ejemplo-id</div>
+    </main>
+    <footer>Pie de pagina</footer>
+</body>
+</html>
