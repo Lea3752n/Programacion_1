@@ -1,0 +1,43 @@
+.resultado:hover {
+    background-color: rgb(201, 201, 201);
+
+}
+
+.resultado {
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+fieldset {
+    margin-top: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    border: 5px;
+}
+
+legend {
+    color: rgb(36, 39, 80);
+    font-size: xx-large;
+    text-decoration: solid;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+button{
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#botones{
+    display: flex;
+}

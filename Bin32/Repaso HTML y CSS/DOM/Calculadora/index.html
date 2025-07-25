@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <form id="calculadora">
+        <fieldset>
+            <legend>Calculator</legend>
+            <label for="num1">Number one:</label>
+            <input type="number" name="num1" id="num1" placeholder="Type a number">
+            <label for="num2">Number two:</label>
+            <input type="number" name="num2" id="num2" placeholder="Type another one">
+            <div id="botones">
+            <button type="button" onclick="Calcular('+')">+</button>
+            <button type="button" onclick="Calcular('-')">-</button>
+            <button type="button" onclick="Calcular('*')">×</button>
+            <button type="button" onclick="Calcular('/')">÷</button>
+            </div>
+            
+    </fieldset>
+    </form>
+    <div id="resultados"></div>
+</body>
+</html>

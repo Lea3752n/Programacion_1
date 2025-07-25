@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Tiquet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Supermercado</legend>
+            <label for="cant">Cantidad</label>
+            <input type="number" name="cant" id="cant" min="1">
+            <label for="prod">Producto</label>
+            <input type="text" name="prod" id="prod">
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" id="precio" min="1">
+        <button type="button" onclick="agregarProducto()">Agregar producto</button>
+        <button id="imprimir" type="button" disabled>Imprimir</button>
+    </fieldset>
+    <section>
+        <h1>Super mercado</h1>
+        <h2>Tiquet de Compra</h2>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <div id="tiquet">
+        </div>
+        <div id="total">
+        </div>
+        <p id="prodTotal" hidden></p>
+        <p></p>
+    </section>
+</body>
+
+</html>
